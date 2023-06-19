@@ -140,3 +140,156 @@ header .inner .mobile-modal nav ul  {
 header .inner .mobile-modal nav ul li a {
     text-decoration: none;
 }
+
+/*********/
+/* Main  */
+/*********/
+
+main {
+    text-align: center;
+}
+
+main .hero-container {
+    background-image: url("./images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 347px;
+    width: 100%;
+}
+
+.hero-container img {
+    position: absolute;
+    top: -95px;
+    left: 0;
+}
+
+/*Intro*/
+
+section.intro {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+section.intro h1 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+section.intro p {
+    color: var(--grayish-blue);
+    font-size: .9rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+section.intro button {
+    background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+    color: var(--white);
+    border: none;
+    border-radius: 25px;
+    padding: .8rem 0rem;
+    width: 12rem;
+    font-size: .9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Why choose us section */
+
+section.why-choose-us {
+    background-color: var(--light-grayish-blue);
+    padding: 3rem 0rem;
+}
+
+section.why-choose-us h2 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.why-choose-us .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.why-choose-us .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards .card img {
+    margin-bottom: 1rem;
+}
+
+.cards .card h3 {
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.cards .card p {
+    color: var(--grayish-blue);
+    font-size: .9rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+/* Latest Articles section */
+
+section.latest-articles {
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+
+section.latest-articles h2 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.latest-articles .articles .article{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin-inline: auto;
+    text-align: left;
+}
+
+.article .article-bottom {
+    background-color: var(--white);
+    padding: 1.5rem 1rem 2rem 1rem;
+}
+
+.article .article-bottom p.author {
+    color: var(--grayish-blue);
+    font-size: .7rem;
+    margin-bottom: .5rem;
+}
+
+.article .article-bottom h3 {
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.article .article-bottom p {
+    color: var(--grayish-blue);
+    font-size: .9rem;
+    line-height: 1.4;
+}
