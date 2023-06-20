@@ -88,6 +88,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 header {
@@ -434,5 +435,70 @@ footer {
 
     header .inner .desktop-header nav ul li a:hover {
         color: var(--dark-blue);
+    }
+
+    /*Main*/
+
+    /*Hero and intro*/
+
+    /*To position mock image correctly
+    we need to set the position of main to relative
+    to allow the image to traspass to why choose us section
+    */
+    main {
+        position: relative;
+        overflow: hidden;
+    }
+
+    main .hero-intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        height: 44rem;
+    }
+
+    .hero-intro .hero-container {
+        order: 1;
+    }
+
+    main .hero-intro .intro {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+        margin-left: auto;
+    }
+
+    main .hero-intro .intro p{
+        margin-inline: 0;
+    }
+
+
+    main .hero-intro .intro h1 {
+        max-width: 80%;
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+
+    main .hero-intro .intro p {
+        max-width: 30rem;
+        font-size: 1.2rem;
+    }
+
+    main .hero-intro .hero-container {
+        height: 100%;
+        background-image: url("./images/bg-intro-desktop.svg");
+        background-position: top -196px left;
+        background-size: 63rem 55rem;
+        position: unset;
+    }
+
+    main .hero-intro .hero-container img {
+        width: 48rem;
+        right: -233px;
+        left: unset;
+        top: -108px;
     }
 }
