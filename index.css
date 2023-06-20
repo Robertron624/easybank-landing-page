@@ -168,7 +168,7 @@ main .hero-container {
 
 section.intro {
     margin-top: 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
 }
 
 section.intro h1 {
@@ -187,6 +187,7 @@ section.intro p {
     margin-inline: auto;
 }
 
+header .desktop-header .cta button,
 footer .desktop-right button.request ,
 section.intro button {
     background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
@@ -198,6 +199,13 @@ section.intro button {
     font-size: .9rem;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header .desktop-header .cta button:hover,
+footer .desktop-right button.request:hover,
+section.intro button:hover {
+    filter: brightness(1.2);
 }
 
 /* Why choose us section */
@@ -357,4 +365,74 @@ footer {
 
 .desktop-right p.copyright {
     color: var(--grayish-blue);
+}
+
+/*********/
+/*Media  */
+/*********/
+
+@media screen and (min-width: 768px) {
+
+    /*Header*/
+
+    header {
+        height: 5rem;
+    }
+
+    header .inner {
+        align-items: center;
+        padding: 0rem 0;
+        max-width: 1200px;
+        margin-inline: auto;
+        height: 100%;
+    }
+
+    header .inner .hamburger {
+        display: none;
+    }
+
+    header .inner .desktop-header {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        width: 50rem;
+    }
+
+    header .inner .desktop-header nav ul {
+        display: flex;
+        gap: 2rem;
+        height: 100%;
+    }
+
+    header .inner .desktop-header nav ul li a {
+        color: var(--grayish-blue);
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    header .inner .desktop-header nav ul li {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+    header .inner .desktop-header nav ul li::after {
+        content: "";
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var(--lime-green);
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    header .inner .desktop-header nav ul li:hover::after {
+        transform: scaleX(1);
+    }
+
+    header .inner .desktop-header nav ul li a:hover {
+        color: var(--dark-blue);
+    }
 }
