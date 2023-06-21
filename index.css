@@ -359,6 +359,12 @@ footer {
 .footer-links .links-one a {
     color: var(--white);
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-links .links-two a:hover,
+.footer-links .links-one a:hover {
+    color: var(--lime-green);
 }
 
 .desktop-right {
@@ -562,5 +568,65 @@ footer {
     section.latest-articles .articles {
         display: flex;
         gap: 2rem;
+    }
+
+    section.latest-articles .articles .top img {
+        max-height: 171.53px;
+        width: 100%;
+    }
+
+    /*Footer*/
+
+    footer .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    footer .inner .desktop-left {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .inner .desktop-left .socials-logo {
+        gap: 0rem;
+        margin-bottom: 0;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    footer .inner .desktop-left .footer-links {
+        display: flex;
+        text-align: left;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .desktop-left .footer-links .links-two,
+    .desktop-left .footer-links .links-one {
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    footer .inner .desktop-right {
+        margin: 0;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    footer .inner .desktop-right button.request {
+        padding: .9rem 0rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        width: 14rem;
+        border-radius: 30px;
+    }
+
+    footer .inner .desktop-right p.copyright {
+        font-size: 1.12rem;
     }
 }
