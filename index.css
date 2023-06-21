@@ -301,6 +301,12 @@ section.latest-articles h2 {
     color: var(--dark-blue);
     margin-bottom: 1rem;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.article .article-bottom h3:hover {
+    color: var(--lime-green);
 }
 
 .article .article-bottom p {
