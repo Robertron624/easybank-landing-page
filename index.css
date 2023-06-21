@@ -211,6 +211,11 @@ section.intro button:hover {
 
 /* Why choose us section */
 
+section.why-choose-us .inner > p{
+    color: var(--grayish-blue);
+    font-size: 1.1rem;
+}
+
 section.why-choose-us {
     background-color: var(--light-grayish-blue);
     padding: 3rem 0rem;
@@ -500,5 +505,62 @@ footer {
         right: -233px;
         left: unset;
         top: -108px;
+    }
+
+    /*Why choose us section*/
+
+    section.why-choose-us {
+        text-align: left;
+    }
+
+    section.why-choose-us .inner{
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+
+    section.why-choose-us .inner > p{
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        width: 32rem;
+    }
+
+    section.why-choose-us .inner .cards {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+
+    .inner .cards .card {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .inner .cards .card img {
+        margin-bottom: 2rem;
+    }
+
+    .inner .cards .card p {
+        max-width: 14rem;
+        margin-inline: 0;
+    }
+
+    /* Latest articles section */
+
+    section.latest-articles {
+        text-align: left;
+        max-width: 1200px;
+        margin-inline: auto;
+        padding: 6rem 0;
+    }
+
+    section.latest-articles h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        font-weight: 500;
+    }
+
+    section.latest-articles .articles {
+        display: flex;
+        gap: 2rem;
     }
 }
